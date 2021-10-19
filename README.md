@@ -1,4 +1,4 @@
-# Composed-Image-Retrieval
+# Composed Modal for Composed Image Retrieval
 This reposity contain implementation of our research in Composed Image Retrieval task
 
 ## Introduction
@@ -9,28 +9,18 @@ Image retrieval systems have seen considerable advances in the last decade, with
 
 ![Example of Composed Image Retrieval on MITState dataset](mitstatesamples.png)
 
-
 ## Architecture:
-
-
 Our model is composed of FiLM module and Stack Attention Network
 ![Model Architecture](model.png)
 
-## Folder Architecture [From ComposeAE]((https://github.com/ecom-research/ComposeAE)
-we use the same train & test protocol as TIRG and [ComposeAE](https://github.com/ecom-research/ComposeAE) code. 
+## Folder Architecture [(From ComposeAE)](https://github.com/ecom-research/ComposeAE)
+We use the same train & test protocol as TIRG and [ComposeAE](https://github.com/ecom-research/ComposeAE) code. 
 - main.py: driver script to run training/testing
 - datasets.py: Dataset classes for loading images & generate training retrieval queries
 - text_model.py: LSTM model to extract text features
 - img_text_composition_models.py: various image text compostion models
 - torch_function.py: contains soft triplet loss function and feature normalization function
 - test_retrieval.py: functions to perform retrieval test and compute recall performance
-
-main.py: driver script to run training/testing
-datasets.py: Dataset classes for loading images & generate training retrieval queries
-text_model.py: LSTM model to extract text features
-img_text_composition_models.py: various image text compostion models
-torch_function.py: contains soft triplet loss function and feature normalization function
-test_retrieval.py: functions to perform retrieval test and compute recall performance
 
 
 To download dataset and run the code, please check out [ComposeAE](https://github.com/ecom-research/ComposeAE) for more details.
