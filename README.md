@@ -6,7 +6,6 @@ Image retrieval systems have seen considerable advances in the last decade, with
 
 ![Example of Composed Image Retrieval on FashionIQ dataset](fashioniqsamples.png)
 
-
 ![Example of Composed Image Retrieval on MITState dataset](mitstatesamples.png)
 
 ## Architecture:
@@ -21,6 +20,10 @@ We use the same train & test protocol as TIRG and [ComposeAE](https://github.com
 - img_text_composition_models.py: various image text compostion models
 - torch_function.py: contains soft triplet loss function and feature normalization function
 - test_retrieval.py: functions to perform retrieval test and compute recall performance
+
+## Results
+Our model outperforms on FashionIQ dataset but performs poorly on MITState dataset
+![Result](results.png)
 
 
 To download dataset and run the code, please check out [ComposeAE](https://github.com/ecom-research/ComposeAE) for more details.
